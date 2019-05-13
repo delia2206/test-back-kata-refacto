@@ -1,5 +1,15 @@
 <?php
 
+namespace Kata;
+
+use Kata\Context\ApplicationContext;
+use Kata\Entity\Quote;
+use Kata\Entity\Template;
+use Kata\Entity\User;
+use Kata\Repository\DestinationRepository;
+use Kata\Repository\QuoteRepository;
+use Kata\Repository\SiteRepository;
+
 class TemplateManager
 {
     public function getTemplateComputed(Template $tpl, array $data)

@@ -1,8 +1,13 @@
 <?php
 
+namespace Kata\Repository;
+
+use Faker;
+use Kata\Entity\Quote;
+
 class QuoteRepository implements Repository
 {
-    use SingletonTrait;
+    use \Kata\Helper\SingletonTrait;
 
     private $siteId;
     private $destinationId;
@@ -18,7 +23,7 @@ class QuoteRepository implements Repository
 
         $this->siteId = $generator->numberBetween(1, 10);
         $this->destinationId = $generator->numberBetween(1, 200);
-        $this->date = new DateTime();
+        $this->date = new \DateTime();
     }
 
     /**

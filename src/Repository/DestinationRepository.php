@@ -1,8 +1,13 @@
 <?php
 
+namespace Kata\Repository;
+
+use Faker;
+use Kata\Entity\Destination;
+
 class DestinationRepository implements Repository
 {
-    use SingletonTrait;
+    use \Kata\Helper\SingletonTrait;
 
     private $country;
     private $conjunction;

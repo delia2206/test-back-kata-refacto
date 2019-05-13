@@ -1,8 +1,14 @@
 <?php
 
+namespace Kata\Context;
+
+use Faker;
+use Kata\Entity\Site;
+use Kata\Entity\User;
+
 class ApplicationContext
 {
-    use SingletonTrait;
+    use \Kata\Helper\SingletonTrait;
 
     /**
      * @var Site
@@ -15,7 +21,7 @@ class ApplicationContext
 
     protected function __construct()
     {
-        $faker = \Faker\Factory::create();
+        $faker = Faker\Factory::create();
         $this->currentSite = new Site($faker->randomNumber(), $faker->url);
         $this->currentUser = new User($faker->randomNumber(), $faker->firstName, $faker->lastName, $faker->email);
     }

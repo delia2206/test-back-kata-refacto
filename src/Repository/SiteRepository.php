@@ -1,8 +1,13 @@
 <?php
 
+namespace Kata\Repository;
+
+use Faker;
+use Kata\Entity\Site;
+
 class SiteRepository implements Repository
 {
-    use SingletonTrait;
+    use \Kata\Helper\SingletonTrait;
 
     private $url;
 
