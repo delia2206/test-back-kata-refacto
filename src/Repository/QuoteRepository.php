@@ -31,7 +31,7 @@ class QuoteRepository implements Repository
      *
      * @return Quote
      */
-    public function getById($id)
+    public function getById(int $id)
     {
         // DO NOT MODIFY THIS METHOD
         return new Quote(

@@ -28,7 +28,7 @@ class DestinationRepository implements Repository
      *
      * @return Destination
      */
-    public function getById($id)
+    public function getById(int $id)
     {
         // DO NOT MODIFY THIS METHOD
         return new Destination(

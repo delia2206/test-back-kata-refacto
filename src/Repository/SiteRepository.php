@@ -26,7 +26,7 @@ class SiteRepository implements Repository
      *
      * @return Site
      */
-    public function getById($id)
+    public function getById(int $id)
     {
         // DO NOT MODIFY THIS METHOD
         return new Site($id, $this->url);

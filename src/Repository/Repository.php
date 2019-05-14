@@ -4,5 +4,5 @@ namespace Kata\Repository;
 
 interface Repository
 {
-    public function getById($id);
+    public function getById(int $id);
 }
